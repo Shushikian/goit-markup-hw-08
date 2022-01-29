@@ -151,6 +151,26 @@ body {
   color: var(--link-focus);
 }
 
+.info-head .item {
+  text-align: center;
+}
+
+.info-head .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mail-icon {
+  fill: currentColor;
+  margin-right: 8px;
+}
+
+.tel-icon {
+  fill: currentColor;
+  margin-right: 8px;
+}
+
 .list {
   list-style: none;
 }
@@ -217,6 +237,11 @@ body {
 .hero {
   margin: 0 auto;
   background-color: var(--main-hero-background);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero-bg.jpg');
+  background-size: auto auto;
+  background-position: center;
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -257,6 +282,18 @@ body {
   flex-basis: calc(100% / 4 calc(-1 * var(--main-margin-btwn-inf)));
   margin-left: var(--main-margin-btwn-inf);
   width: 270px;
+}
+
+.benefits-container {
+  display: flex;
+  background-color: #f5f4fa;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0;
 }
 
 .main-benefits-title {
