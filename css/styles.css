@@ -176,20 +176,16 @@ body {
 }
 
 .footer {
-  /* display: block; */
   line-height: 1.71;
   letter-spacing: 0.03em;
   background-color: var(--footer-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .container-footer {
   display: flex;
   align-items: baseline;
-}
-
-.footer > .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer-container {
@@ -198,6 +194,7 @@ body {
 
 .footer a {
   font-style: normal;
+  color: var(--footer-adress);
 }
 
 .footer-logo {
@@ -244,15 +241,6 @@ body {
   border-radius: 50%;
   color: #ffffff;
 }
-
-/* .link-social {
-  padding: 0;
-  width: 44px;
-  height: 44px;
-  border-color: transparent;
-  border-radius: 50%;
-  color: #ffffff;
-} */
 
 .connect-social-item {
   fill: currentColor;
@@ -340,8 +328,7 @@ body {
   width: 270px;
   height: 120px;
   border-radius: 4px;
-  padding: 0;
-  margin: 0;
+  margin-bottom: 30px;
 }
 
 .main-benefits-title {
@@ -517,8 +504,12 @@ body {
   margin-top: calc(-1 * var(--main-margin-btwn-inf));
 }
 
-.card-portf:focus,
-.card-portf:hover {
+.card-portf-link {
+  display: block;
+}
+
+.card-portf-link:focus,
+.card-portf-link:hover {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
