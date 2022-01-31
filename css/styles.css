@@ -310,7 +310,7 @@ body {
 }
 
 .main-benefits-list {
-  margin-left: -var(--main-margin-btwn-inf);
+  margin-left: calc(-1 * var(--main-margin-btwn-inf));
   display: flex;
 }
 
