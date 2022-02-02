@@ -520,23 +520,30 @@ body {
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 500ms, visibility 500ms;
 }
 
 .is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
+}
+
+.backdrop.is-hidden .modal {
+  transform: scale(0.5);
 }
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 528px;
   height: 581px;
   background: var(--background-color-html);
+  border-radius: 4px;
 
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 350ms;
 }
 
 .modal-button {
