@@ -552,7 +552,7 @@ body {
 
 .modal-button:hover,
 .modal-button:focus {
-  border-color: currentColor;
+  fill: var(--active-html);
 }
 
 /*------------------------PORTFOLIO---------------------*/
