@@ -85,6 +85,9 @@ body {
   cursor: pointer;
   display: inline-block;
   border-radius: 4px;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link {
@@ -122,6 +125,9 @@ body {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+}
+
+.header-border {
   border-bottom: 1px solid #ececec;
 }
 
@@ -142,14 +148,23 @@ body {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .info-head {
   margin-left: auto;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .info-head > .item .link {
   color: var(--info-head);
+  transition-property: color;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav .item + .item,
@@ -210,6 +225,9 @@ body {
 .footer a {
   font-style: normal;
   color: var(--footer-adress);
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-logo {
@@ -265,11 +283,10 @@ body {
   margin-left: 10px;
 }
 
-.connect-social-button:hover,
+/* .connect-social-button:hover,
 .connect-social-button:focus {
-  color: #ffffff;
   background-color: var(--link-focus);
-}
+} */
 
 .hidden {
   position: absolute;
@@ -283,6 +300,7 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+
 /*---------------------------------MAIN----------------------------------------*/
 
 .hero {
@@ -442,6 +460,9 @@ body {
   border-radius: 50%;
   color: #afb1b8;
   padding: 12px;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-team-social-item {
@@ -496,6 +517,9 @@ body {
   border: 1px solid;
   border-color: currentColor;
   box-sizing: border-box;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-partners-list-item {
@@ -584,6 +608,13 @@ body {
   border: transparent;
 }
 
+.portf-button:focus,
+.portf-button:hover {
+  color: var(--portf-focus-button-txt);
+  background-color: var(--link-focus);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
 .portf-work {
   display: flex;
   flex-wrap: wrap;
@@ -609,7 +640,9 @@ body {
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portf-img-text {
@@ -622,6 +655,12 @@ body {
   font-size: 18px;
   line-height: calc(28 / 18);
   color: var(--main-title-txt);
+}
+
+.card-portf-link {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-portf-link:focus,
@@ -663,11 +702,4 @@ body {
   font-size: 16px;
   line-height: 1.87;
   color: var(--portf-work-text);
-}
-
-.portf-button:focus,
-.portf-button:hover {
-  color: var(--portf-focus-button-txt);
-  background-color: var(--link-focus);
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
