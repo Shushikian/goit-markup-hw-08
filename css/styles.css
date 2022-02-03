@@ -163,7 +163,7 @@ body {
 .info-head > .item .link {
   color: var(--info-head);
   transition-property: color;
-  transition-duration: 1000ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -544,7 +544,7 @@ body {
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 500ms, visibility 500ms;
+  transition: opacity 250ms, visibility 250ms;
 }
 
 .is-hidden {
@@ -567,7 +567,7 @@ body {
   border-radius: 4px;
 
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 350ms;
+  transition: transform 250ms;
 }
 
 .modal-button {
