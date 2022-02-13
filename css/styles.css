@@ -316,7 +316,7 @@ body {
 }
 
 .mailing-list {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .email-send {
@@ -334,6 +334,7 @@ body {
   );
   border-radius: 4px;
   padding-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
 }
 .email-send-input:focus {
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -666,7 +667,6 @@ body {
   top: 50%;
   left: 50%;
   width: 528px;
-  height: 581px;
   background: var(--background-color-html);
   border-radius: 4px;
   padding: 40px;
@@ -796,6 +796,10 @@ body {
     0.2,
     1
   );
+}
+
+.label-checkbox a {
+  color: var(--link-focus);
 }
 
 .modal-check-icon {
