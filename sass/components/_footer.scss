@@ -1,0 +1,136 @@
+.footer {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  background-color: var(
+    --footer-background-color
+  );
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container-footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-container {
+  padding-left: 0px;
+}
+
+.footer a {
+  font-style: normal;
+  color: var(--footer-adress);
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(
+    0.4,
+    0,
+    0.2,
+    1
+  );
+}
+
+.footer-logo {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.footer-info .footer-item + .footer-item {
+  margin-top: 9px;
+}
+
+.footer-adress {
+  color: var(--footer-adress);
+}
+
+.footer-item > .cont {
+  color: var(--footer-info);
+}
+
+.connect {
+  margin-left: 70px;
+}
+
+.footer-title {
+  display: flex;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.connect-social-list {
+  display: flex;
+}
+
+.connect-social-list-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  border-color: transparent;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+.connect-social-item {
+  fill: currentColor;
+}
+
+.connect-social-list
+  .connect-social-list-item
+  + .connect-social-list-item {
+  margin-left: 10px;
+}
+
+.mailing-list {
+  margin-left: auto;
+}
+
+.email-send {
+  display: flex;
+}
+
+.email-send-input {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(
+    0px 4px 4px rgba(0, 0, 0, 0.15)
+  );
+  border-radius: 4px;
+  padding-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.email-send-input:focus {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  padding: 0px;
+
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+
+  background: #2196f3;
+  border: 0px;
+}
+
+.footer-submit-btn-svg {
+  margin-left: 10px;
+  fill: var(--footer-adress);
+}

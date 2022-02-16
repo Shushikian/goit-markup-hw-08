@@ -1,0 +1,39 @@
+.main-partners {
+  margin-bottom: 50px;
+}
+
+.main-partners-list {
+  display: flex;
+  .item + .item {
+    margin-left: 30px;
+  }
+}
+.link-partners {
+  display: flex;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  color: #afb1b8;
+  border: 1px solid;
+  border-color: currentColor;
+  box-sizing: border-box;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(
+    0.4,
+    0,
+    0.2,
+    1
+  );
+  &:hover,
+  &:focus {
+    color: var(--link-focus);
+    cursor: pointer;
+  }
+}
+.main-partners-list-item {
+  fill: currentColor;
+}

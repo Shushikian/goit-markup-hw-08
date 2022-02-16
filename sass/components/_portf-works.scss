@@ -1,0 +1,97 @@
+.portf-work {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(
+    -1 * var(--main-margin-btwn-inf)
+  );
+  margin-top: calc(
+    -1 * var(--main-margin-btwn-inf)
+  );
+}
+.card-portf-link {
+  display: block;
+}
+.portf-img {
+  position: relative;
+  overflow: hidden;
+}
+.portf-overlay {
+  position: absolute;
+  content: '';
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(0);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(
+    0.4,
+    0,
+    0.2,
+    1
+  );
+}
+.portf-img-text {
+  position: absolute;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 63px;
+  padding-bottom: 63px;
+
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  color: var(--main-title-txt);
+}
+.card-portf-link {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(
+    0.4,
+    0,
+    0.2,
+    1
+  );
+  &:focus,
+  &:hover {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  &:focus .portf-overlay,
+  &:hover .portf-overlay {
+    opacity: 1;
+    transform: translateY(-100%);
+  }
+}
+
+.card-text {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.portf-work > .item-of-work {
+  flex-basis: calc(
+    100% / 3 - var(--main-margin-btwn-inf)
+  );
+  margin-left: var(--main-margin-btwn-inf);
+  margin-top: var(--main-margin-btwn-inf);
+}
+
+.card-text {
+  padding: 20px 24px;
+}
+
+.portf-work-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--portf-work-title);
+}
+
+.portf-work-text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--portf-work-text);
+}
