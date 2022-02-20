@@ -84,6 +84,10 @@ body {
 .link {
   text-decoration: none;
   color: var(--link-main-color);
+  &:hover,
+  &:focus {
+    color: var(--active-html);
+  }
 }
 
 .title {

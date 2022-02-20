@@ -1,20 +1,3 @@
-.current {
-  color: var(--active-html);
-  position: relative;
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-
-    width: 100%;
-    height: 4px;
-    bottom: 0;
-    left: 0;
-
-    border-radius: 2px;
-    background-color: var(--active-html);
-  }
-}
 .header {
   font-weight: 500;
   line-height: calc(16 / 14);
@@ -24,7 +7,7 @@
 .header-border {
   border-bottom: 1px solid #ececec;
 }
-.main-nav,
+.header__nav,
 .nav-ul,
 .nav,
 .info-head {
@@ -32,10 +15,11 @@
   align-items: center;
 }
 
-.nav {
+.nav-ul__list {
   color: var(--nav);
   margin-left: 93px;
-  .link {
+  list-style: none;
+  .nav-ul__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -48,6 +32,32 @@
       1
     );
   }
+  & .nav-ul__item + .nav-ul__item {
+    margin-left: 50px;
+  }
+}
+
+.nav-ul__item {
+  text-decoration: none;
+}
+
+.current {
+  color: var(--active-html);
+  position: relative;
+}
+
+.current::after {
+  content: '';
+  display: block;
+  position: absolute;
+
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+
+  border-radius: 2px;
+  background-color: var(--active-html);
 }
 
 .info-head {
@@ -60,49 +70,45 @@
     0.2,
     1
   );
-  .item {
+  &__item {
     text-align: center;
   }
 
-  .link {
+  &__link {
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
+  & .info-head__item + .info-head__item {
+    margin-left: 50px;
+  }
+  .info-head__tel,
+  .info-head__mail {
+    color: var(--info-head);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(
+      0.4,
+      0,
+      0.2,
+      1
+    );
+  }
+}
+.info-head__mail-icon {
+  fill: currentColor;
+  margin-right: 8px;
 }
 
-.info-head > .item .link {
-  color: var(--info-head);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(
-    0.4,
-    0,
-    0.2,
-    1
-  );
+.info-head__tel-icon {
+  fill: currentColor;
+  margin-right: 8px;
 }
 
-.nav .item + .item,
-.info-head .item + .item {
-  margin-left: 50px;
-}
-
-.nav .link:hover,
-.info-head .link:hover,
-.nav .link:focus,
-.info-head .link:focus,
-.footer-info .link:hover,
-.footer-info .link:focus {
+.info-head__mail:focus,
+.info-head__mail:hover,
+.info-head__tel:focus,
+.info-head__tel:hover {
   color: var(--link-focus);
-}
-
-.mail-icon {
-  fill: currentColor;
-  margin-right: 8px;
-}
-
-.tel-icon {
-  fill: currentColor;
-  margin-right: 8px;
 }
