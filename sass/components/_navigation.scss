@@ -7,6 +7,7 @@
 .header-border {
   border-bottom: 1px solid #ececec;
 }
+
 .header__nav,
 .nav-ul,
 .nav,
@@ -83,8 +84,8 @@
   & .info-head__item + .info-head__item {
     margin-left: 50px;
   }
-  .info-head__tel,
-  .info-head__mail {
+  &__tel,
+  &__mail {
     color: var(--info-head);
     transition-property: color;
     transition-duration: 250ms;
