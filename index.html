@@ -18,19 +18,24 @@
 <body>
 
     <header class="header">
-        <div class="header-mobile">
+        <div class="header-mobile container">
             <nav class="header-mobile__nav">
                 <div class="header-mobile__main">
                 <a href="./index.html" class="logo"><span class="logo-sab">Web</span>Studio</a>
-                <button type="button" class="header-mobile__menu-button">
-                                <svg width="40" height="40">
-                                    <use href="./images/icons.svg#icon-menu" class="menu-open"></use>
-                                    <use href="./images/icons.svg#icon-close" class="menu-close"></use>
+                <button type="button" class="header-mobile__menu-button" 
+                aria-expanded="false">
+                                <svg width="40" height="40" aria-label="Открытие мобильного меню">
+                                    <use href="./images/icons.svg#icon-menu" class="menu-open"></use>                                    
                                 </svg>
                 </button>
                 </div>
-                <div class="header-mobile__menu">
-                    <div class="header-mobile__navigation">
+                <div class="header-mobile__menu container">
+                    <!-- <div class="header-mobile__navigation"> -->
+                        <button type="button" class="header-mobile__menu-button">
+                            <svg width="40" height="40" aria-label="Закрытие мобильного меню">
+                                <use href="./images/icons.svg#icon-close" class="menu-close"></use>
+                            </svg>
+                        </button>
                     <ul class="nav nav-ul__list list">
                         <li class="nav-ul__item">
                             <a href="./index.html" class="link current nav-ul__link">Студия</a>
@@ -42,8 +47,8 @@
                             <a href="" class="link nav-ul__link">Контакты</a>
                         </li>
                     </ul>
-                    </div>
-                    <div class="header-mobile__contacts">
+                    <!-- </div> -->
+                    <!-- <div class="header-mobile__contacts"> -->
                         <ul class="info-head list">
                             <li class="info-head__item">
                                 <a href="mailto:info@devstudio.com" class="link info-head__mail info-head__link">
@@ -68,7 +73,7 @@
                                 <a href="">LinkedIn</a>
                             </li>
                         </ul>
-                    </div>
+                    <!-- </div> -->
                 </div>
             </nav>
         </div>
@@ -110,15 +115,15 @@
     </header>
 
    <main>    
-        <!--Герой-->
-         <!-- <section class="hero">
+        Герой
+         <section class="hero">
              <div class="container">
             <h1 class="hero-title title">Эффективные решения для вашего бизнеса</h1>
             <button type="button" class="main-button btn" data-modal-open>Заказать услугу</button>
             </div>
-        </section> -->
+        </section>
         
-        <!-- <section class="main-benefits section">
+        <section class="main-benefits section">
             <div class="container container-midl-margin">
             <h2 class="main-benefits-main-title hidden">Наши преимущества</h2>
             <ul class="list main-benefits-list">
@@ -360,7 +365,7 @@
                 </ul>
 
             </div>
-        </section> -->
+        </section>
     </main>
 
     <!-- <footer class="footer">
@@ -488,6 +493,7 @@
     </div> -->
     
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 
 </body>
 </html>
