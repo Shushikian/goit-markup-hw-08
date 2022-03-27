@@ -26,13 +26,18 @@
     margin-bottom: var(--main-margin-btwn-inf);
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main-benefits-list {
+    flex-wrap: wrap;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .main-benefits-list {
     margin-left: calc(
       -1 * var(--main-margin-btwn-inf)
     );
     display: flex;
-    flex-wrap: wrap;
     .item {
       flex-basis: calc(
         100% / 4
@@ -52,20 +57,6 @@
     height: 120px;
     border-radius: 4px;
     margin-bottom: 30px;
-  }
-  .main-benefits-list {
-    margin-left: calc(
-      -1 * var(--main-margin-btwn-inf)
-    );
-    display: flex;
-    .item {
-      flex-basis: calc(
-        100% / 4
-          calc(-1 * var(--main-margin-btwn-inf))
-      );
-      margin-left: var(--main-margin-btwn-inf);
-      width: 354px;
-    }
   }
 }
 @media screen and (min-width: 1200px) {

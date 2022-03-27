@@ -53,6 +53,13 @@
       right: 15px;
     }
   }
+  .container-mob {
+    max-width: 480px;
+    margin-left: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .header-mobile__menu-container {
     display: flex;
     flex-direction: column;
