@@ -1,13 +1,3 @@
-.portf-work {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(
-    -1 * var(--main-margin-btwn-inf)
-  );
-  margin-top: calc(
-    -1 * var(--main-margin-btwn-inf)
-  );
-}
 .card-portf-link {
   display: block;
 }
@@ -70,14 +60,6 @@
   border-bottom: 1px solid #eeeeee;
 }
 
-.portf-work > .item-of-work {
-  flex-basis: calc(
-    100% / 3 - var(--main-margin-btwn-inf)
-  );
-  margin-left: var(--main-margin-btwn-inf);
-  margin-top: var(--main-margin-btwn-inf);
-}
-
 .card-text {
   padding: 20px 24px;
 }
@@ -94,4 +76,55 @@
   font-size: 16px;
   line-height: 1.87;
   color: var(--portf-work-text);
+}
+@media screen and (max-width: 767px) {
+  .portf-work {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .portf-work .item-of-work + .item-of-work {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portf-work {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(
+      -1 * var(--main-margin-btwn-inf)
+    );
+    margin-top: calc(
+      -1 * var(--main-margin-btwn-inf)
+    );
+  }
+  .portf-work > .item-of-work {
+    flex-basis: calc(
+      100% / 2 - var(--main-margin-btwn-inf)
+    );
+    margin-left: var(--main-margin-btwn-inf);
+    margin-top: var(--main-margin-btwn-inf);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portf-work {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(
+      -1 * var(--main-margin-btwn-inf)
+    );
+    margin-top: calc(
+      -1 * var(--main-margin-btwn-inf)
+    );
+  }
+  .portf-work > .item-of-work {
+    flex-basis: calc(
+      100% / 3 - var(--main-margin-btwn-inf)
+    );
+    margin-left: var(--main-margin-btwn-inf);
+    margin-top: var(--main-margin-btwn-inf);
+  }
 }

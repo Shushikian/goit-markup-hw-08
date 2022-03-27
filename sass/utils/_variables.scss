@@ -25,6 +25,7 @@
   --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  --main-pading-cont-mob-tab: 60px;
   --main-pading-cont: 94px;
   --modal-btn-bg: #188ce8;
 }
@@ -60,6 +61,12 @@ body {
     padding-right: 15px;
     margin: 0 auto;
   }
+  .section {
+    padding-bottom: var(
+      --main-pading-cont-mob-tab
+    );
+    padding-top: var(--main-pading-cont-mob-tab);
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -69,6 +76,12 @@ body {
     padding-right: 15px;
     margin: 0 auto;
   }
+  .section {
+    padding-bottom: var(
+      --main-pading-cont-mob-tab
+    );
+    padding-top: var(--main-pading-cont-mob-tab);
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -76,6 +89,12 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+  }
+  .section {
+    padding-bottom: var(
+      --main-pading-cont-mob-tab
+    );
+    padding-top: var(--main-pading-cont-mob-tab);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -85,11 +104,10 @@ body {
     padding-right: 15px;
     margin: 0 auto;
   }
-}
-
-.section {
-  padding-bottom: var(--main-pading-cont);
-  padding-top: var(--main-pading-cont);
+  .section {
+    padding-bottom: var(--main-pading-cont);
+    padding-top: var(--main-pading-cont);
+  }
 }
 
 .btn {
@@ -118,12 +136,12 @@ body {
   }
 }
 
-// .title {
-//   font-weight: 700;
-//   font-size: 36px;
-//   line-height: calc(42 / 36);
-//   text-align: center;
-// }
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+}
 .list {
   list-style: none;
 }
@@ -138,9 +156,4 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
-%var-container {
-  width: calc(100%-30px);
-  padding-left: 15px;
-  padding-right: 15px;
 }

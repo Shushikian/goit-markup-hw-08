@@ -175,3 +175,22 @@
 
   color: var(--main-button-txt);
 }
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+  }
+  .modal-txt {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .modal-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+  }
+  .label-checkbox {
+    padding-left: 0;
+  }
+}

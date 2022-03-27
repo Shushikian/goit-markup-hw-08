@@ -1,36 +1,82 @@
-.main-benefits-list {
-  margin-left: calc(
-    -1 * var(--main-margin-btwn-inf)
-  );
-  display: flex;
-  .item {
-    flex-basis: calc(
-      100% / 4
-        calc(-1 * var(--main-margin-btwn-inf))
-    );
-    margin-left: var(--main-margin-btwn-inf);
-    width: 270px;
-  }
-}
-
-.benefits-container {
-  display: flex;
-  background-color: #f5f4fa;
-  align-items: center;
-  justify-content: center;
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
 .main-benefits-title {
   font-weight: 700;
   line-height: calc(16 / 14);
   text-transform: uppercase;
-  font-size: 14px;
   margin-bottom: 10px;
+  font-size: 14px;
 }
 .main-benefits-text {
   line-height: 1.71;
   color: var(--main-text-p);
+}
+@media screen and (max-width: 767px) {
+  .main-benefits-title {
+    text-align: center;
+  }
+  .benefits-container {
+    display: flex;
+    background-color: #f5f4fa;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  .main-benefits-list .item:not(:last-child) {
+    margin-bottom: var(--main-margin-btwn-inf);
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-benefits-list {
+    margin-left: calc(
+      -1 * var(--main-margin-btwn-inf)
+    );
+    display: flex;
+    flex-wrap: wrap;
+    .item {
+      flex-basis: calc(
+        100% / 4
+          calc(-1 * var(--main-margin-btwn-inf))
+      );
+      margin-left: var(--main-margin-btwn-inf);
+      width: 354px;
+    }
+  }
+
+  .benefits-container {
+    display: flex;
+    background-color: #f5f4fa;
+    align-items: center;
+    justify-content: center;
+    width: 354px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  .main-benefits-list {
+    margin-left: calc(
+      -1 * var(--main-margin-btwn-inf)
+    );
+    display: flex;
+    .item {
+      flex-basis: calc(
+        100% / 4
+          calc(-1 * var(--main-margin-btwn-inf))
+      );
+      margin-left: var(--main-margin-btwn-inf);
+      width: 354px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits-container {
+    display: flex;
+    background-color: #f5f4fa;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
 }
