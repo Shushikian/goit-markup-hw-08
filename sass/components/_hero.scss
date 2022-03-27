@@ -82,7 +82,7 @@
     border: 0px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -109,6 +109,11 @@
     margin-right: auto;
   }
 }
+// @media screen and (min-width: 1199px) {
+//   .hero {
+//     width: 768px;
+//   }
+// }
 @media screen and (min-width: 1200px) {
   .hero {
     margin: 0 auto;
